@@ -1,0 +1,606 @@
+.header {
+  background-color: $black-71;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 90vh;
+
+  position: relative;
+  &__img {
+    height: 100%;
+    width: 100%;
+    z-index: -10;
+    object-position: center;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+  }
+  &__title {
+    color: $white;
+    text-align: center;
+    animation: 1 fade-in 2.5s;
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(70px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  &__call-to-action {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 500px;
+  }
+  &__btn:hover {
+    animation: 1 jump 0.5s;
+  }
+
+  &__btn {
+    background-color: $light-orange;
+    align-self: center;
+    padding: 20px 60px;
+    font-size: $banner-btn;
+    font-family: $secondary-font;
+    color: $dark-brown;
+    border-radius: 5px;
+  }
+
+  @keyframes jump {
+    20%,
+    60% {
+      transform: translateX(-3px);
+    }
+    40%,
+    80% {
+      transform: translateX(3px);
+    }
+  }
+  &__icons {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: $light-orange;
+    font-size: 50px;
+    align-items: center;
+    cursor: pointer;
+    &--first {
+      position: absolute;
+      text-align: center;
+      top: 10px;
+    }
+    &--second {
+      position: absolute;
+      top: 25px;
+    }
+  }
+  &__icons {
+    animation: 1s rebound infinite;
+    scroll-behavior: smooth;
+  }
+  @keyframes rebound {
+    30% {
+      transform: translateY(-3px);
+    }
+    70% {
+      transform: translateY(2px);
+    }
+  }
+}
+
+//featured products
+.featured-products {
+  &__title {
+    font-size: $card-title;
+    font-family: $secondary-font;
+    color: $dark-brown;
+    font-weight: 600;
+  }
+}
+//special offers
+.special-offers {
+  background-color: $light-blue-30;
+  padding: 5px 0;
+  &__container {
+    margin: 30px auto 200px;
+  }
+  &__card-1 {
+    padding: 0;
+    border-radius: 20px;
+    position: relative;
+  }
+  &__card-1::after {
+    content: 'COMING SOON';
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: $white;
+    width: 150px;
+    background-color: $dark-orange;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 0 20px 0 20px;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  &__title {
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    color: $white;
+    font-size: $special-title-large;
+    font-family: $secondary-font;
+    &--sm-title {
+      @extend .special-offers__title;
+      font-size: $special-title-small;
+      color: $dark-brown;
+      top: 20px;
+      left: 20px;
+    }
+    &--sm-title-light {
+      @extend .special-offers__title;
+      color: $white;
+      font-size: $special-title-small;
+      top: 90px;
+      left: 50%;
+      width: 90%;
+      text-align: center;
+      transform: translateX(-50%);
+    }
+    &--large-title-light {
+      @extend .special-offers__title;
+      color: $white;
+    }
+    &--large-title-dark {
+      @extend .special-offers__title;
+      color: $dark-brown;
+    }
+  }
+  &__card-2 {
+    padding: 0;
+    position: relative;
+  }
+  &__card-2::after {
+    content: 'COMING SOON';
+    position: absolute;
+    right: 15px;
+    top: 90px;
+    color: $white;
+    width: 150px;
+    background-color: $dark-orange;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 0 20px 0 20px;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  &__bg {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    position: relative;
+    &--left-circle {
+      @extend .special-offers__bg;
+      background-image: url('/img/special-offers/bg-small-img.jpg');
+    }
+    &--right-circle {
+      @extend .special-offers__bg;
+      background-image: url('/img/special-offers/bg-big-img.jpg');
+    }
+  }
+  &__card-3 {
+    padding: 0;
+    position: relative;
+  }
+  &__card-3::after {
+    content: 'SOLD OUT';
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: $white;
+    width: 150px;
+    background-color: $dark-orange;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 0 20px 0 20px;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  &__card-4 {
+    padding: 0;
+    position: relative;
+  }
+  &__card-4::after {
+    content: 'SPECIAL OFFER';
+    border: none;
+    position: absolute;
+    right: 50%;
+    top: 180px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 15px 20px;
+    color: $white;
+    background-color: $dark-orange;
+    border-radius: 0 20px 0 20px;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  &__img {
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+    border-radius: 20px;
+    &--sm-tent {
+      @extend .special-offers__img;
+      position: absolute;
+      bottom: 0;
+      max-height: 220px;
+      max-width: 327px;
+    }
+    &--large-tent {
+      @extend .special-offers__img;
+      position: absolute;
+      max-height: 300px;
+      max-width: 375px;
+      right: 0;
+      bottom: 0px;
+    }
+  }
+
+  &__icon {
+    font-size: 2.5rem;
+  }
+  &__text {
+    position: relative;
+    margin-left: 10px;
+    font-size: 1.2rem;
+  }
+  &__text::before {
+    content: '';
+    position: absolute;
+    top: 18px;
+    width: 100%;
+    height: 1px;
+    background-color: $white;
+  }
+  &__call-to-action {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 500px;
+  }
+}
+.hide {
+  display: none;
+}
+.loading {
+  text-align: center;
+  background-color: black;
+  height: 700px;
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
+@media (max-width: 1200px) {
+  .special-offers {
+    &__card-2::after {
+      content: 'COMING SOON';
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      color: $white;
+      width: 150px;
+      background-color: $dark-orange;
+      text-align: center;
+      padding: 15px 20px;
+      border-radius: 0 20px 0 20px;
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+    &__card-4::after {
+      content: 'SPECIAL OFFER';
+      border: none;
+      position: absolute;
+      right: 0;
+      top: 0px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
+      padding: 15px 20px;
+      color: $white;
+      background-color: $dark-orange;
+      border-radius: 0 20px 0 20px;
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+    &__title {
+      position: absolute;
+      top: 80px;
+      left: 30px;
+      color: $white;
+      font-size: $special-title-large;
+      font-family: $secondary-font;
+      &--sm-title {
+        position: absolute;
+        font-size: $special-title-small;
+        color: $dark-brown;
+        top: 50px;
+        left: 20px;
+      }
+      &--sm-title-light {
+        position: absolute;
+        color: $white;
+        font-size: $special-title-small;
+        top: 90px;
+        left: 50%;
+        width: 90%;
+        text-align: center;
+        transform: translateX(-50%);
+      }
+      &--large-title-dark {
+        color: $dark-brown;
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 75vh;
+
+    &__title {
+      color: $white;
+      text-align: center;
+    }
+    &__call-to-action {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 500px;
+    }
+
+    &__btn {
+      background-color: $light-orange;
+      align-self: center;
+      padding: 20px 60px;
+      font-size: $banner-btn-mobile;
+      font-family: $secondary-font;
+      color: $dark-brown;
+      border-radius: 5px;
+    }
+  }
+  .special-offers {
+    background-color: $light-blue-30;
+    padding: 5px 0;
+
+    &__card-1,
+    &__card-2,
+    &__card-3,
+    &__card-4 {
+      max-width: 600px;
+      height: 300px;
+      margin: auto;
+    }
+
+    &__img {
+      &--sm-tent {
+        position: absolute;
+        bottom: 0;
+        max-width: 340px;
+        height: 250px;
+      }
+      &--large-tent {
+        position: absolute;
+        bottom: 0px;
+        max-width: 300px;
+        height: 150px;
+      }
+    }
+    &__title {
+      font-size: $special-title-small;
+      top: 60px;
+      text-align: center;
+      left: 50%;
+      width: 100%;
+      transform: translateX(-50%);
+      &--sm-title {
+        font-size: $special-title-small;
+        color: $dark-brown;
+        top: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      &--sm-title-light {
+        color: $white;
+        font-size: $special-title-small;
+        top: 60px;
+        left: 0;
+        width: 90%;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    &__card-2::after {
+      content: 'COMING SOON';
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      color: $white;
+      width: 150px;
+      background-color: $dark-orange;
+      text-align: center;
+      padding: 15px 20px;
+      border-radius: 0 20px 0 20px;
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+    &__card-4::after {
+      content: 'SPECIAL OFFER';
+      border: none;
+      position: absolute;
+      right: 0;
+      top: 0px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
+      padding: 15px 20px;
+      color: $white;
+      background-color: $dark-orange;
+      border-radius: 0 20px 0 20px;
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+    &__img {
+      height: inherit;
+      width: inherit;
+      object-fit: cover;
+      border-radius: 20px;
+      &--sm-tent {
+        height: inherit;
+        width: inherit;
+        object-fit: cover;
+        border-radius: 20px;
+        position: absolute;
+        bottom: 0;
+      }
+      &--large-tent {
+        object-fit: cover;
+        border-radius: 20px;
+        position: absolute;
+        max-height: 180px;
+        max-width: 280px;
+        right: 0;
+        bottom: 0px;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 75vh;
+
+    &__title {
+      color: $white;
+      text-align: center;
+    }
+    &__call-to-action {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 500px;
+    }
+
+    &__btn {
+      background-color: $light-orange;
+      align-self: center;
+      padding: 20px 60px;
+      font-size: $banner-btn-mobile;
+      font-family: $secondary-font;
+      color: $dark-brown;
+      border-radius: 5px;
+    }
+  }
+  .special-offers {
+    background-color: $light-blue-30;
+    padding: 5px 0;
+
+    &__card-1,
+    &__card-2,
+    &__card-3,
+    &__card-4 {
+      max-width: 600px;
+      height: 300px;
+      margin: auto;
+    }
+
+    &__img {
+      &--sm-tent {
+        position: absolute;
+        bottom: 0;
+        max-width: 240px;
+        height: 150px;
+      }
+      &--large-tent {
+        position: absolute;
+        bottom: 0px;
+        max-width: 240px;
+        height: 150px;
+      }
+    }
+    &__title {
+      font-size: $special-title-mobile;
+      top: 60px;
+      text-align: center;
+      left: 50%;
+      width: 100%;
+      transform: translateX(-50%);
+      &--sm-title {
+        font-size: $special-title-mobile;
+        color: $dark-brown;
+        top: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      &--sm-title-light {
+        color: $white;
+        font-size: $special-title-mobile;
+        top: 60px;
+        left: 0;
+        width: 90%;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    &__card-2::after {
+      content: 'COMING SOON';
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      color: $white;
+      width: 150px;
+      background-color: $dark-orange;
+      text-align: center;
+      padding: 15px 20px;
+      border-radius: 0 20px 0 20px;
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+    &__card-4::after {
+      content: 'SPECIAL OFFER';
+      border: none;
+      position: absolute;
+      right: 0;
+      top: 0px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
+      padding: 15px 20px;
+      color: $white;
+      background-color: $dark-orange;
+      border-radius: 0 20px 0 20px;
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+  }
+}

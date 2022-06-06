@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/4a5f897340.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="navigation"></div>
+    </header>
+    <main>
+      <section class="container products">
+        <div class="row">
+          <h1>OUR PRODUCTS</h1>
+          <div class="products__line"></div>
+          <div class="alert"></div>
+        </div>
+        <div class="row">
+          <div class="col products__searchbar">
+            <form class="d-flex products__search-form">
+              <input
+                class="products__input-text"
+                placeholder="Search..."
+                aria-label="Search"
+              />
+              <span
+                class="iconify products__search-icon"
+                data-icon="bx:bx-search"
+              ></span>
+            </form>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 cards"></div>
+        <div class="row products__pagination">
+          <ul class="pagination">
+            <li class="page-item pagination__list-item">
+              <a
+                class="page-link pagination__link--previous"
+                href="#"
+                aria-label="Previous"
+              >
+                <span
+                  class="iconify"
+                  data-icon="dashicons:arrow-left-alt2"
+                ></span>
+              </a>
+            </li>
+            <li class="page-item pagination__list-item">
+              <a class="page-link active pagination__link" href="#">1</a>
+            </li>
+            <li class="page-item pagination__list-item">
+              <a class="page-link pagination__link" href="#">2</a>
+            </li>
+            <li class="page-item pagination__list-item">
+              <a class="page-link pagination__link" href="#">3</a>
+            </li>
+            <li class="page-item pagination__list-item">
+              <a
+                class="page-link pagination__link--next"
+                href="#"
+                aria-label="Next"
+              >
+                <span
+                  class="iconify"
+                  data-icon="dashicons:arrow-right-alt2"
+                ></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container d-none d-lg-block">
+        <div class="row footer__container p-4">
+          <div class="col p-3 contact">
+            <h4 class="contact__title">CONTACT US</h4>
+            <div class="contact__underline"></div>
+            <ul class="list-group mt-4 contact__list-group">
+              <li class="contact__list">
+                <span
+                  class="iconify contact__icon"
+                  data-icon="ic:outline-local-post-office"
+                ></span>
+                <span class="d-none d-lg-block contact__text"
+                  >campshop@campshop.com</span
+                >
+              </li>
+              <li class="contact__list">
+                <span
+                  class="iconify contact__icon"
+                  data-icon="akar-icons:phone"
+                ></span>
+                <span class="d-none d-lg-block contact__text"
+                  >563-487-8508</span
+                >
+              </li>
+              <li class="contact__list">
+                <span
+                  class="iconify contact__icon"
+                  data-icon="akar-icons:location"
+                ></span>
+                <span class="d-none d-lg-block contact__text">
+                  3587 Summit Street <br />
+                  Center Junction, IA 14896
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="col p-3 follow">
+            <div class="follow__title-container">
+              <h4 class="follow__title">FOLLOW US</h4>
+              <div class="follow__underline"></div>
+            </div>
+            <div class="follow__icons">
+              <span
+                class="iconify follow__icon"
+                data-icon="akar-icons:instagram-fill"
+              ></span>
+              <span
+                class="iconify follow__icon"
+                data-icon="icon-park-outline:facebook-one"
+              ></span>
+              <span
+                class="iconify follow__icon"
+                data-icon="akar-icons:github-fill"
+              ></span>
+            </div>
+            <div class="text-center follow__copyright-data">
+              <div class="follow__reserved-rights">
+                <span
+                  class="iconify follow__icon--copyright"
+                  data-icon="ant-design:copyright-circle-outlined"
+                ></span>
+                <span class="follow__text--year">2021</span>
+                <span class="follow__text">CampShop, All rights reserved.</span>
+              </div>
+              <p class="follow__text">
+                Web project made for educational purposes
+              </p>
+              <p class="follow__text">By: Mariano David Franco Gallo</p>
+            </div>
+          </div>
+          <div class="col p-3 payments">
+            <img src="./img/Logo.png" alt="" class="payments__img-logo" />
+            <div class="payments__icons">
+              <span
+                class="iconify payments__icon"
+                data-icon="fontisto:visa"
+              ></span>
+              <span
+                class="iconify payments__icon"
+                data-icon="fontisto:mastercard"
+              ></span>
+              <span
+                class="iconify payments__icon"
+                data-icon="fontisto:paypal"
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container d-block d-lg-none">
+        <div class="row footer__container p-4">
+          <div class="col-6 p-3 contact">
+            <div class="contact__title-container">
+              <h4 class="contact__title">CONTACT US</h4>
+              <div class="contact__underline"></div>
+            </div>
+            <div class="contact__icons">
+              <span
+                class="iconify contact__icon--mv"
+                data-icon="ic:outline-local-post-office"
+              ></span>
+              <span
+                class="iconify contact__icon--mv"
+                data-icon="akar-icons:phone"
+              ></span>
+              <span
+                class="iconify contact__icon--mv"
+                data-icon="akar-icons:location"
+              ></span>
+            </div>
+          </div>
+          <div class="col-6 p-3 follow">
+            <div class="follow__title-container">
+              <h4 class="follow__title">FOLLOW US</h4>
+              <div class="follow__underline"></div>
+            </div>
+            <div class="follow__icons">
+              <span
+                class="iconify follow__icon"
+                data-icon="akar-icons:instagram-fill"
+              ></span>
+              <span
+                class="iconify follow__icon"
+                data-icon="icon-park-outline:facebook-one"
+              ></span>
+              <span
+                class="iconify follow__icon"
+                data-icon="akar-icons:github-fill"
+              ></span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="text-center follow__copyright-data m-0">
+              <div class="follow__reserved-rights">
+                <span
+                  class="iconify follow__icon--copyright"
+                  data-icon="ant-design:copyright-circle-outlined"
+                ></span>
+                <span class="follow__text--year">2021</span>
+                <span class="follow__text">CampShop, All rights reserved.</span>
+              </div>
+              <p class="follow__text">
+                Web project made for educational purposes
+              </p>
+              <p class="follow__text">By: Mariano David Franco Gallo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="js/components/navigation.js"></script>
+    <script type="module" src="./js/products.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+.admin {
+  &__add-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__add-product {
+    padding: 20px 30px;
+    font-size: 2.5rem;
+    border-radius: 10px;
+    font-weight: 600;
+    position: relative;
+    background-color: $light-orange;
+  }
+  &__add-product::before {
+    width: 0px;
+    height: 2px;
+    background-color: black;
+    content: '';
+    position: absolute;
+    top: 60px;
+    left: 65px;
+  }
+  &__add-product:hover::before {
+    width: 270px;
+    height: 2px;
+    background-color: black;
+    content: '';
+    position: absolute;
+    top: 60px;
+    left: 60px;
+  }
+  &__searchbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.card {
+  &__trash-btn {
+    border: none;
+    background-color: transparent;
+    align-self: flex-end;
+    font-size: 2.2rem;
+  }
+}

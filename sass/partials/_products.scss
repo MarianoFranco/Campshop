@@ -1,0 +1,100 @@
+.products {
+  display: flex;
+  flex-direction: column;
+  &__line {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin: 20px 0;
+    opacity: 0.5;
+  }
+  &__searchbar {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__search-form {
+    position: relative;
+    margin: 30px 0;
+    align-items: center;
+  }
+  &__input-text {
+    font-size: 3rem;
+    padding: 5px 20px;
+    text-align: start;
+    width: 300px;
+    border: none;
+    border-bottom: solid 2px $dark-orange;
+  }
+
+  &__search-icon {
+    color: $dark-orange;
+    font-size: 4.6rem;
+    position: absolute;
+    right: 10px;
+  }
+  &__search-btn::before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 377px;
+    height: 2px;
+    background-color: $dark-orange;
+  }
+  &__order-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__icon {
+    color: $dark-orange;
+    font-size: 4rem;
+  }
+  &__pagination {
+    align-self: center;
+    margin: 40px 0;
+  }
+}
+
+.pagination {
+  &__list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+  }
+
+  &__link {
+    font-size: 2rem;
+    color: $black;
+    border: none;
+    &--previous,
+    &--next {
+      @extend .pagination__link;
+      border: none;
+      font-size: 3rem;
+      color: $dark-orange;
+    }
+  }
+  &__link:visited {
+    color: $black;
+  }
+  &__link.active {
+    background-color: $light-orange;
+    padding: 7px 18px;
+    border-radius: 50px;
+    transform: scale(1.2);
+  }
+  &__link.active:hover {
+    background-color: $light-orange;
+    padding: 7px 18px;
+    border-radius: 50px;
+    color: $black;
+  }
+  &__link:hover {
+    transform: scale(1.2);
+    background-color: transparent;
+    color: $dark-orange;
+  }
+}

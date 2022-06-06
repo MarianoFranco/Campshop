@@ -1,0 +1,153 @@
+.login {
+  position: relative;
+  height: 100vh;
+  &__bg-img {
+    background-color: $black-85;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  &__left-col {
+    height: 90vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &__box-container {
+    z-index: 10;
+    background-color: $white;
+    width: 544px;
+    height: 513px;
+    border-radius: 20px;
+    background: $orange-gradient;
+    padding: 50px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: $white;
+  }
+
+  &__title {
+    color: $white;
+    font-size: 3rem;
+    font-family: $primary-font;
+  }
+  &__subtitle {
+    color: white;
+    font-size: 1.8rem;
+  }
+  &__data-container {
+    margin: 5px 0;
+    position: relative;
+  }
+  &__icon {
+    color: white;
+    font-size: 2.2rem;
+    position: absolute;
+    left: 25px;
+    top: 32px;
+  }
+
+  &__textbox {
+    height: 56px;
+    background-color: transparent;
+    border: 2px solid $white;
+    padding-left: 80px;
+    font-size: 2rem;
+    border-radius: 10px;
+    font-weight: 500;
+  }
+  &__textbox::placeholder {
+    font-weight: 400;
+    font-size: 1.8rem;
+  }
+
+  &__textbox:focus {
+    background-color: $light-orange;
+    border: solid 3px $dark-blue;
+    box-shadow: none;
+  }
+
+  &__btn {
+    width: 100%;
+    height: 56px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: $dark-blue;
+    color: $white;
+    border: none;
+    font-size: 1.8rem;
+    position: relative;
+  }
+  &__btn:hover {
+    background-color: $dark-orange;
+    font-size: 2rem;
+    transition: 0.1s;
+    font-weight: 500;
+    border: solid 2px $dark-blue;
+    transform: translateY(-2px);
+  }
+  &__btn:hover::before {
+    content: '';
+    width: 60px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 41px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &__btn:focus {
+    background-color: $dark-orange;
+  }
+  &__account-text {
+    font-size: 1.7rem;
+  }
+  &__sign-link {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: $dark-blue;
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 992px) {
+  .login {
+    position: relative;
+    height: 100vh;
+    &__bg-img {
+      background-color: $black-85;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }
+    &__left-col {
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__textbox {
+      height: 56px;
+      background-color: transparent;
+      border: 2px solid $white;
+      padding-left: 54px;
+      font-size: 2rem;
+      border-radius: 10px;
+      font-weight: 500;
+    }
+    &__box-container {
+      z-index: 10;
+      background-color: $white;
+      width: 450px;
+      height: 513px;
+      border-radius: 20px;
+      background: $orange-gradient;
+      padding: 50px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      color: $white;
+    }
+  }
+}

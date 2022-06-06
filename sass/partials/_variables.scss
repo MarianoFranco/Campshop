@@ -1,0 +1,74 @@
+//My colors
+
+$dark-orange: #c16e2c;
+$light-orange: #eb9c34;
+$dark-blue: #357695;
+$light-blue: #79acbf;
+$dark-brown: #352218;
+$white: #ffffff;
+$black: #000000;
+
+//transparent colours
+
+$black-85: rgba(0, 0, 0, 0.85);
+$black-71: rgba(0, 0, 0, 0.71);
+$black-30: rgba(0, 0, 0, 0.3);
+$light-blue-30: rgba(121, 172, 191, 0.3);
+$light-blue-70: rgba(121, 172, 191, 0.7);
+//gradients
+
+$orange-gradient: linear-gradient(
+  90deg,
+  rgba(24, 15, 2, 0.85) 0%,
+  rgba(193, 110, 44, 0.85) 175%
+);
+//Fonts variables
+
+$primary-font: 'Montserrat', sans-serif;
+$secondary-font: 'Allerta Stencil', sans-serif;
+
+//font-sizes
+
+//navbar
+
+$menu: 2.2rem;
+$icons: 1.8rem;
+
+//Banner
+
+$h1: 7.2rem;
+
+$banner-btn: 4rem;
+
+//subtitles
+
+$h2: 4rem;
+
+//Featured Cards
+
+$card-title: 3.2rem;
+$card-price: 2.9rem;
+$card-link: 2.5rem;
+
+//Special Offerss
+
+$special-title-large: 5rem;
+$special-title-small: 4rem;
+$special-tags: 1.4rem;
+//Cart
+$cart-card-title: 3rem;
+$cart-card-price: 3rem;
+$cart-card-summary: 2rem;
+$cart-price-summary: 2.5rem;
+
+//Footer
+
+$h4-footer: 2.2rem;
+$text-footer: 1.8rem;
+$year-footer: 2.2rem;
+
+//mobile version
+
+$h1-mobile: 5rem;
+$banner-btn-mobile: 3rem;
+$special-title-mobile: 3rem;
