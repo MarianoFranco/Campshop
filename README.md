@@ -1,6 +1,6 @@
-<img src="./.readme/noroff-light.png" width="160" align="right">
+# Campshop e-commerce - Semester Project 2
 
-# Semester Project 2
+![preview home campshop!](img/campshop-preview.jpg)
 
 To create an e-commerce website that has both customer-facing and admin sections. The client facing system must be responsive and the website will be populated by a Strapi API which you will deploy to heroku.
 
@@ -99,13 +99,13 @@ Allow products to be deleted. Before a product is deleted you must display a con
 ## Rules
 Copying and sharing of any code will result in your project being failed.
 
-## Report
+## Login User
 
-<img src="https://c.tenor.com/fBvQV_5Lp6UAAAAC/we-dont-do-that-here-black-panther.gif" width="400" />
+- User: admin@admin.com
+- Pass: admin1234
 
+##Built with
 
-## Submission
-
-- Submit everything to your github link.
-- If Moodle prompts your for a zip file zip a PDF up with the link inside it.
-- Please provide your username and password if you **dont you will fail**
+- HTML
+- Sass
+- Javascript
