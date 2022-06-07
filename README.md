@@ -89,16 +89,6 @@ Allow products to be deleted. Before a product is deleted you must display a con
 - Use vanilla (regular) JavaScript for the project and split your code up using modules (imports/exports).
 - You can use small JS libraries to perform tasks such as formatting dates with Moment.js
 
-
-## Marking criteria
-- All functionality should be implemented.
-- The design should be coherent and provide a good user experience.
-- All the customer-facing pages must be fully responsive.
-- Use appropriate names for Sass classes and folders. -All code should be properly formatted and arranged with sensible variable and function names. - Use modules (imports/exports) to organise your code.
-
-## Rules
-Copying and sharing of any code will result in your project being failed.
-
 ## Login User
 
 - User: admin@admin.com
