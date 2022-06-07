@@ -109,3 +109,7 @@ Copying and sharing of any code will result in your project being failed.
 - HTML
 - Sass
 - Javascript
+
+## Contact
+
+https://www.linkedin.com/in/mariano-david-franco-gallo/
